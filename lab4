@@ -1,0 +1,51 @@
+LAB 4 QUESTION ANSWERS
+
+Ans1 - The --global means that the configuratons are applied to all the repositories on your profile on that computer
+If you leave out the --global flag and just run git config user.name "YOUR NAME", git will apply that setting locally. It will only be in the repository of where 
+youre standing right now
+
+Ans2 - The .git hidden directory appears when you run the command to view all files, but is completely hidden during a normal file listing.
+The .git directory contains all the metadata, tracking files, history, and configuration files for your project. This includes:
+config
+description
+HEAD 
+hooks/
+info/
+objects/
+refs/
+
+Ans 3- Number of files: 0 files
+None, because there are no commits yet.
+
+Ans 4- Anything inside the .venv/ folder (as well as __pycache__/, *.pyc, and .DS_Store files if they were present).
+
+Ans 5- Because your teammates need it. Committing .gitignore ensures that anyone else who clones your repository automatically ignores the exact same junk files, keeping the project clean for everyone.
+
+Ans 6 - It moved from "Untracked files" to "Changes to be committed".
+It moved from your Working Directory (Workspace) to the Staging Area (Index).
+
+Ans 7- It prints a summary of the commit, including the branch name (like [master ...] or [main ...]), the commit hash, the commit message (Lab work so far), and file change statistics.
+It said 1 file changed (if you only track README.md or .gitignore individually as shown in the lab steps).
+
+Ans 8- They are called the Short SHA-1 Hash (or abbreviated commit hash).
+They serve as a unique identifier for that specific commit snapshot, allowing you to reference, view, or roll back to this exact point in your project history later.
+
+Ans 9-  Make changes to your files in the working directory.
+Run git status to check which files are untracked or modified.
+Run git add to move those changes into the staging area.
+Run git commit to permanently save the snapshot to your history.
+
+Ans 10- The README.md file serves as the landing page and entry point for any software repository.
+Code hosting platforms like GitHub, GitLab, and Bitbucket automatically look for this exact filename in the root directory and render its contents beautifully at the bottom of the repository page. It is meant to immediately tell visitors, developers, or recruiters what the project is, how it works, and how to install it.
+
+Ans 11-  It securely authorized your account and configured the GitHub CLI to act as a Git credential helper.
+The command stores a secure OAuth authentication token locally. Git automatically pulls this token from the helper whenever you run git push, removing the need for manual password entry.
+
+Ans 12- The README.md file content is displayed on the front page.
+Code hosting platforms like GitHub automatically scan the root folder for a file named README.md to render as the main landing page summary for the repository.
+
+Ans 13- No, your local commit history did not change.
+The git push command simply uploads a copy of your existing local commit history to the remote server (GitHub). Your local commits, hashes, and files remain exactly the same as they were before pushing.
+
+Ans 14- A private repository securely exists on GitHub's servers. Its contents are fully accessible to the owner and explicitly invited collaborators (like your TAs), while remaining hidden from the general public.
+A repository that does not exist means no files, history, or configurations are stored on GitHub at all, making it completely inaccessible to everyone, including yourself and your TAs.
